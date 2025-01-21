@@ -4,7 +4,7 @@ const skills = [
     { name: 'HTML/CSS', years: 3, level: 90 },
     { name: 'JavaScript', years: 2, level: 75 },
     { name: 'C++/C#', years: 1, level: 65 },
-    { name: 'Python', years: 1, level: 25 },
+    { name: 'Python', years: 1, level: 10 },
     { name: 'Machine Learning', years: 0, level: 0 },
     { name: 'Deep Learning', years: 0, level: 0 },
     { name: 'Computer Vision', years: 0, level: 0 },
@@ -45,9 +45,8 @@ const projects = [
         type: 'Project',
         link: 'https://github.com/erickotico'
     },
-   
     {
-        title: 'Computer Vision em Tempo Real (Em Desenvolvimento) ',
+        title: 'Computer Vision em Tempo Real (Em Desenvolvimento)',
         description: 'Sistema de detecção de objetos em tempo real usando YOLOv5.',
         tech: ['Python', 'PyTorch', 'OpenCV'],
         image: 'https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?auto=format&fit=crop&w=800&q=80',
