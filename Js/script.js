@@ -3,41 +3,57 @@ const skills = [
     { name: 'Unreal Engine', years: 2, level: 90 },
     { name: 'HTML/CSS', years: 3, level: 90 },
     { name: 'JavaScript', years: 2, level: 75 },
-    { name: 'C++/C#', years: 1, level: 65 },
-    { name: 'Python', years: 1, level: 10 },
-    { name: 'Machine Learning', years: 0, level: 0 },
+    { name: 'C++/C#', years: 1, level: 25 },
+    { name: 'Python', years: 1, level: 10 }
+    /*{ name: 'Machine Learning', years: 0, level: 0 },
     { name: 'Deep Learning', years: 0, level: 0 },
     { name: 'Computer Vision', years: 0, level: 0 },
-    { name: 'Python para IA', years: 0, level: 0 }
+    { name: 'Python para IA', years: 0, level: 0 }*/
 ];
 
 // Projects Data
 const projects = [
     {
-        title: 'Aventura em Unreal Engine 5',
-        description: 'Jogo de aventura 3D com IA para NPCs usando ML-Agents.',
-        tech: ['Unreal Engine 5', 'Blueprint'],
-        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80',
-        type: 'Game',
-        link: 'https://erickotico-dev.itch.io/'
-    },
-    {
-        title: 'SideScroller',
-        description: 'Jogo de deslocamento lateral ',
-        tech: ['Unreal Engine 5', 'Blueprint'],
-        image: 'https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?auto=format&fit=crop&w=800&q=80',
-        type: 'Game',
-        link: 'https://erickotico-dev.itch.io/'
-    },
-    {
         title: 'TriviaGame',
         description: 'Jogo de perguntas e respostas com variedade de temas',
         tech: ['Unreal Engine 5', 'Blueprint'],
-        image: 'https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?auto=format&fit=crop&w=800&q=80',
+        image: './Img/LogoTriviaGame.png',
+        type: 'Game',
+        link: 'https://erickotico-dev.itch.io/trivia-game'
+    },
+    {
+        title: 'Jogo da cobrinha',
+        description: 'Jogo da cobrinha classico',
+        tech: ['Unreal Engine 5', 'Blueprint'],
+        image: './Img/LogoSnakeClassicGame.png',
+        type: 'Game',
+        link: 'https://erickotico-dev.itch.io/jogo-da-cobrinha'
+    },  
+    {
+        title: 'Swat Combat {Em Produção}',
+        description: 'Um Shooter Game em terceira pessoa, onde seu objetivo é matar os inimigos que aparecerá',
+        tech: ['Unreal Engine 4.26', 'Blueprint'],
+        image: './Img/GameSwatCombat.png',
         type: 'Game',
         link: 'https://erickotico-dev.itch.io/'
     },
     {
+        title: 'SideScroller {Em Produção}',
+        description: 'Jogo de deslocamento lateral onde o terá desafios onde terrá que passar',
+        tech: ['Unreal Engine 5', 'Blueprint'],
+        image: './Img/GameSideScroller.png',
+        type: 'Game',
+        link: 'https://erickotico-dev.itch.io/'
+    }, 
+    {
+        title: 'Zero Hero {Em Produção}',
+        description: 'Jogo FPS tatico em equipes onde o desafio é eliminar os inimigos no determinado limite de tempo ',
+        tech: ['Unreal Engine 5', 'Blueprint'],
+        image: './Img/LogoZeroHourM.jpeg',
+        type: 'Game',
+        link: 'https://erickotico-dev.itch.io/'
+    },
+   /* {
         title: 'Sistema de Recomendação AI (Em Desenvolvimento) ',
         description: 'Sistema de recomendação baseado em deep learning para e-commerce.',
         tech: ['Python', 'TensorFlow', 'FastAPI'],
@@ -52,7 +68,7 @@ const projects = [
         image: 'https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?auto=format&fit=crop&w=800&q=80',
         type: 'Project',
         link: 'https://github.com/erickotico'
-    }
+    }*/
 ];
 
 // Populate Skills
@@ -79,7 +95,7 @@ function populateProjects() {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         
-        // Define the link text based on project type
+        // Define o texto e o link com base no tipo de projeto
         const linkText = project.type === 'Project' ? 'Ver no GitHub' : 'Ver na Itch.io';
         
         projectCard.innerHTML = `
