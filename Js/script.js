@@ -30,7 +30,7 @@ const projects = [
         title: 'Lendas da resistencia {Alfa}',
         description: 'Um Jogo Jrpg de aventura e ação onde você enfrenta inimigos e explora um mundo cheio de mistérios',
         tech: ['Unreal Engine 5.2', 'Blueprint'],
-        image: './Img/ThumbLendasDaResistencia.png',
+        image: './Img/ThumbLendasdaResistencia.png',
         type: 'Game',
         link: 'https://erickotico-dev.itch.io/lendas-da-resistencia'
     },
