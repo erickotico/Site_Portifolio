@@ -3,12 +3,9 @@ const skills = [
     { name: 'Unreal Engine', years: 2, level: 90 },
     { name: 'HTML/CSS', years: 3, level: 90 },
     { name: 'JavaScript', years: 2, level: 75 },
-    { name: 'C++/C#', years: 1, level: 25 },
+    { name: 'C#', years: 1, level: 25 },
+    { name: 'C++', years: 1, level: 25 },
     { name: 'Python', years: 1, level: 10 }
-    /*{ name: 'Machine Learning', years: 0, level: 0 },
-    { name: 'Deep Learning', years: 0, level: 0 },
-    { name: 'Computer Vision', years: 0, level: 0 },
-    { name: 'Python para IA', years: 0, level: 0 }*/
 ];
 
 // Projects Data
@@ -16,21 +13,29 @@ const projects = [
     {
         title: 'TriviaGame',
         description: 'Jogo de perguntas e respostas com variedade de temas',
-        tech: ['Unreal Engine 5', 'Blueprint'],
+        tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoTriviaGame.png',
         type: 'Game',
         link: 'https://erickotico-dev.itch.io/trivia-game'
     },
     {
-        title: 'Jogo da cobrinha',
+        title: 'Jogo da cobrinha{Alfa}',
         description: 'Jogo da cobrinha classico',
-        tech: ['Unreal Engine 5', 'Blueprint'],
+        tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoSnakeClassicGame.png',
         type: 'Game',
         link: 'https://erickotico-dev.itch.io/jogo-da-cobrinha'
-    },  
+    },
     {
-        title: 'Swat Combat {Em Produção}',
+        title: 'Lendas da resistencia {Alfa}',
+        description: 'Um Jogo Jrpg de aventura e ação onde você enfrenta inimigos e explora um mundo cheio de mistérios',
+        tech: ['Unreal Engine 5.2', 'Blueprint'],
+        image: './Img/ThumbLendasDaResistencia.png',
+        type: 'Game',
+        link: 'https://erickotico-dev.itch.io/lendas-da-resistencia'
+    },
+    {
+        title: 'Swat Combat {Descontinuado}',
         description: 'Um Shooter Game em terceira pessoa, onde seu objetivo é matar os inimigos que aparecerá',
         tech: ['Unreal Engine 4.26', 'Blueprint'],
         image: './Img/GameSwatCombat.png',
@@ -38,37 +43,21 @@ const projects = [
         link: 'https://erickotico-dev.itch.io/'
     },
     {
-        title: 'SideScroller {Em Produção}',
+        title: 'SideScroller {Descontinuado}',
         description: 'Jogo de deslocamento lateral onde o terá desafios onde terrá que passar',
-        tech: ['Unreal Engine 5', 'Blueprint'],
+        tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/GameSideScroller.png',
         type: 'Game',
         link: 'https://erickotico-dev.itch.io/'
     }, 
     {
-        title: 'Zero Hero {Em Produção}',
+        title: 'Zero Hero {Descontinuado}',
         description: 'Jogo FPS tatico em equipes onde o desafio é eliminar os inimigos no determinado limite de tempo ',
-        tech: ['Unreal Engine 5', 'Blueprint'],
+        tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoZeroHourM.jpeg',
         type: 'Game',
         link: 'https://erickotico-dev.itch.io/'
-    },
-   /* {
-        title: 'Sistema de Recomendação AI (Em Desenvolvimento) ',
-        description: 'Sistema de recomendação baseado em deep learning para e-commerce.',
-        tech: ['Python', 'TensorFlow', 'FastAPI'],
-        image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80',
-        type: 'Project',
-        link: 'https://github.com/erickotico'
-    },
-    {
-        title: 'Computer Vision em Tempo Real (Em Desenvolvimento)',
-        description: 'Sistema de detecção de objetos em tempo real usando YOLOv5.',
-        tech: ['Python', 'PyTorch', 'OpenCV'],
-        image: 'https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?auto=format&fit=crop&w=800&q=80',
-        type: 'Project',
-        link: 'https://github.com/erickotico'
-    }*/
+    }
 ];
 
 // Populate Skills
