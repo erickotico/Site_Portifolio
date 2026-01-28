@@ -69,7 +69,7 @@ const projects = [
         description: 'Este é um site para um jogo em desenvolvimento chamado "Empire Of Rebirth and Ruins". O site apresenta informações sobre o jogo, incluindo sua história, personagens, mecânicas de jogo e atualizações de desenvolvimento. Desenvolvido com tecnologias web modernas para proporcionar uma experiência informativa e envolvente aos visitantes interessados no jogo.',
         tech: ['HTML5','CSS3','JavaScript'],
         image: './Img/LogoRPG.jpg',
-        type: 'Projetc',
+        type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
         videoId: 'dQw4w9WgXcQ'
     }, 
@@ -77,14 +77,23 @@ const projects = [
         title: 'Calculadora Simples',
         description: 'Este projeto é uma calculadora simples desenvolvida usando HTML, CSS e JavaScript. Ela permite aos usuários realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão, por meio de uma interface amigável e fácil de usar.',
         tech: ['HTML5','CSS3','JavaScript'],
-        image: './Img/LogoRPG.jpg',
-        type: 'Projetc',
+        image: './Img/Calculadora.png',
+        type: 'github',
+        link: 'https://github.com/erickotico/EmpireofRebithandRuins',
+        videoId: 'dQw4w9WgXcQ'
+    }, 
+    {
+        title: 'Barbearia Online',
+        description: 'Este projeto é um site de barbearia online desenvolvido com HTML, CSS e JavaScript. O site oferece informações sobre os serviços de barbearia, permite agendamentos online e apresenta uma galeria de estilos de cabelo. Com um design moderno e responsivo, o site visa proporcionar uma experiência agradável aos clientes que desejam cuidar do visual.',
+        tech: ['HTML5','CSS3','JavaScript'],
+        image: './Img/BarberImg.jpeg',
+        type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
         videoId: 'dQw4w9WgXcQ'
     }
 ];
 
-// Populate Skills
+// Populate Skillsknfo
 function populateSkills() {
     const skillsGrid = document.getElementById('skillsGrid');
     skills.forEach(skill => {
@@ -107,9 +116,10 @@ function populateProjects() {
     projects.forEach((project, index) => {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
+        projectCard.setAttribute('data-type', project.type);
         
         // Define o texto e o link com base no tipo de projeto
-        const linkText = project.type === 'Projetc' ? 'Ver no GitHub' : 'Ver na Itch.io';
+        const linkText = project.type === 'github' ? 'Ver no GitHub' : 'Ver na Itch.io';
         
         // Cria um elemento de imagem com validação
         const imgElement = document.createElement('img');
@@ -163,6 +173,31 @@ function populateProjects() {
         });
     });
 }
+
+// Função para filtrar projetos por tipo
+function filterProjects(filterType) {
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        if (filterType === 'all') {
+            card.style.display = '';
+        } else {
+            const cardType = card.getAttribute('data-type');
+            card.style.display = cardType === filterType ? '' : 'none';
+        }
+    });
+}
+
+// Função para atualizar botões de abas
+function updateTabButtons(activeFilter) {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+        if (btn.getAttribute('data-filter') === activeFilter) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
 // Tratando os Formulario
 function handleFormSubmit(e) {
     e.preventDefault();
@@ -182,6 +217,16 @@ document.addEventListener('DOMContentLoaded', () => {
     populateSkills();
     populateProjects();
     document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
+    
+    // Adicionar event listeners aos botões de abas
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const filterType = this.getAttribute('data-filter');
+            filterProjects(filterType);
+            updateTabButtons(filterType);
+        });
+    });
     
     // Mensagem de ajuda no console
     console.log('%c🎨 PORTFÓLIO CARREGADO COM SUCESSO!', 'color: #4CAF50; font-size: 16px; font-weight: bold');
