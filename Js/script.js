@@ -16,7 +16,8 @@ const projects = [
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoTriviaGame.png',
         type: 'Game',
-        link: 'https://erickotico-dev.itch.io/trivia-game'
+        link: 'https://erickotico-dev.itch.io/trivia-game',
+        videoId: 'dQw4w9WgXcQ'
     },
     {
         title: 'Jogo da cobrinha{Alfa}',
@@ -24,7 +25,8 @@ const projects = [
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoSnakeClassicGame.png',
         type: 'Game',
-        link: 'https://erickotico-dev.itch.io/jogo-da-cobrinha'
+        link: 'https://erickotico-dev.itch.io/jogo-da-cobrinha',
+        videoId: 'dQw4w9WgXcQ'
     },
     {
         title: 'Lendas da resistencia {Alfa}',
@@ -32,7 +34,8 @@ const projects = [
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/ThumbLendasdaResistencia.png',
         type: 'Game',
-        link: 'https://erickotico-dev.itch.io/lendas-da-resistencia'
+        link: 'https://erickotico-dev.itch.io/lendas-da-resistencia',
+        videoId: 'dQw4w9WgXcQ'
     },
     {
         title: 'Swat Combat {Descontinuado}',
@@ -40,7 +43,8 @@ const projects = [
         tech: ['Unreal Engine 4.26', 'Blueprint'],
         image: './Img/GameSwatCombat.png',
         type: 'Game',
-        link: 'https://erickotico-dev.itch.io/'
+        link: 'https://erickotico-dev.itch.io/',
+        videoId: 'dQw4w9WgXcQ'
     },
     {
         title: 'SideScroller {Descontinuado}',
@@ -48,7 +52,8 @@ const projects = [
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/GameSideScroller.png',
         type: 'Game',
-        link: 'https://erickotico-dev.itch.io/'
+        link: 'https://erickotico-dev.itch.io/',
+        videoId: 'dQw4w9WgXcQ'
     }, 
     {
         title: 'Zero Hero {Descontinuado}',
@@ -56,7 +61,26 @@ const projects = [
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoZeroHourM.jpeg',
         type: 'Game',
-        link: 'https://erickotico-dev.itch.io/'
+        link: 'https://erickotico-dev.itch.io/',
+        videoId: 'dQw4w9WgXcQ'
+    }, 
+    {
+        title: 'Empire Of Rebirth and Ruins',
+        description: 'Este é um site para um jogo em desenvolvimento chamado "Empire Of Rebirth and Ruins". O site apresenta informações sobre o jogo, incluindo sua história, personagens, mecânicas de jogo e atualizações de desenvolvimento. Desenvolvido com tecnologias web modernas para proporcionar uma experiência informativa e envolvente aos visitantes interessados no jogo.',
+        tech: ['HTML5','CSS3','JavaScript'],
+        image: './Img/LogoRPG.jpg',
+        type: 'Projetc',
+        link: 'https://github.com/erickotico/EmpireofRebithandRuins',
+        videoId: 'dQw4w9WgXcQ'
+    }, 
+    {
+        title: 'Calculadora Simples',
+        description: 'Este projeto é uma calculadora simples desenvolvida usando HTML, CSS e JavaScript. Ela permite aos usuários realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão, por meio de uma interface amigável e fácil de usar.',
+        tech: ['HTML5','CSS3','JavaScript'],
+        image: './Img/LogoRPG.jpg',
+        type: 'Projetc',
+        link: 'https://github.com/erickotico/EmpireofRebithandRuins',
+        videoId: 'dQw4w9WgXcQ'
     }
 ];
 
@@ -85,26 +109,48 @@ function populateProjects() {
         projectCard.className = 'project-card';
         
         // Define o texto e o link com base no tipo de projeto
-        const linkText = project.type === 'Project' ? 'Ver no GitHub' : 'Ver na Itch.io';
+        const linkText = project.type === 'Projetc' ? 'Ver no GitHub' : 'Ver na Itch.io';
         
-        projectCard.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" class="project-image clickable-image" data-project-id="${index}">
-            <div class="project-content">
-                <h3 class="project-title">${project.title}</h3>
-                <p class="project-description">${project.description}</p>
-                <div class="project-tech">
-                    ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                </div>
-                <a href="${project.link}" class="project-link" target="_blank" rel="noopener noreferrer">
-                    ${linkText}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                        <polyline points="15 3 21 3 21 9"/>
-                        <line x1="10" y1="14" x2="21" y2="3"/>
-                    </svg>
-                </a>
+        // Cria um elemento de imagem com validação
+        const imgElement = document.createElement('img');
+        imgElement.src = project.image;
+        imgElement.alt = project.title;
+        imgElement.className = 'project-image clickable-image';
+        imgElement.setAttribute('data-project-id', index);
+        
+        // Validação de imagem com fallback
+        imgElement.onerror = function() {
+            console.warn(`⚠️ Imagem não encontrada para "${project.title}": ${project.image}`);
+            // Mostra imagem padrão ou placeholder
+            this.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200"%3E%3Crect fill="%23ddd" width="300" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="16" fill="%23666" text-anchor="middle" dominant-baseline="middle"%3EImagem não encontrada%3C/text%3E%3C/svg%3E';
+            this.style.opacity = '0.6';
+        };
+        
+        // Sucesso ao carregar a imagem
+        imgElement.onload = function() {
+            console.log(`✅ Imagem carregada com sucesso: "${project.title}"`);
+        };
+        
+        projectCard.appendChild(imgElement);
+        
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'project-content';
+        contentDiv.innerHTML = `
+            <h3 class="project-title">${project.title}</h3>
+            <p class="project-description">${project.description}</p>
+            <div class="project-tech">
+                ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
             </div>
+            <a href="${project.link}" class="project-link" target="_blank" rel="noopener noreferrer">
+                ${linkText}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+            </a>
         `;
+        projectCard.appendChild(contentDiv);
         projectsGrid.appendChild(projectCard);
     });
 
@@ -136,4 +182,10 @@ document.addEventListener('DOMContentLoaded', () => {
     populateSkills();
     populateProjects();
     document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
+    
+    // Mensagem de ajuda no console
+    console.log('%c🎨 PORTFÓLIO CARREGADO COM SUCESSO!', 'color: #4CAF50; font-size: 16px; font-weight: bold');
+    console.log('%cDica: Para adicionar projetos, edite Js/script.js', 'color: #2196F3; font-size: 12px');
+    console.log('%cGuia completo: Veja GUIA_ADICIONAR_PROJETOS.md', 'color: #FF9800; font-size: 12px');
+    console.log('%c📱 Abra o Console (F12) para ver erros de imagem', 'color: #9C27B0; font-size: 12px');
 });
