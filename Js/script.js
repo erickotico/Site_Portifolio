@@ -80,7 +80,7 @@ function populateSkills() {
 // Projetos Populares
 function populateProjects() {
     const projectsGrid = document.getElementById('projectsGrid');
-    projects.forEach(project => {
+    projects.forEach((project, index) => {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         
@@ -88,7 +88,7 @@ function populateProjects() {
         const linkText = project.type === 'Project' ? 'Ver no GitHub' : 'Ver na Itch.io';
         
         projectCard.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" class="project-image">
+            <img src="${project.image}" alt="${project.title}" class="project-image clickable-image" data-project-id="${index}">
             <div class="project-content">
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
@@ -106,6 +106,15 @@ function populateProjects() {
             </div>
         `;
         projectsGrid.appendChild(projectCard);
+    });
+
+    // Add click event listeners to project images
+    document.querySelectorAll('.clickable-image').forEach(image => {
+        image.style.cursor = 'pointer';
+        image.addEventListener('click', function() {
+            const projectId = this.getAttribute('data-project-id');
+            window.location.href = `projeto-detalhes.html?id=${projectId}`;
+        });
     });
 }
 // Tratando os Formulario
