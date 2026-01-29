@@ -90,6 +90,15 @@ const projects = [
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
         videoId: 'dQw4w9WgXcQ'
+    }, 
+    {
+        title: 'Pokedex',
+        description: 'Este projeto é uma Pokédex digital desenvolvida usando HTML, CSS e JavaScript. A Pokédex permite aos usuários pesquisar e visualizar informações detalhadas sobre diferentes espécies de Pokémon, incluindo seus tipos, habilidades e estatísticas. Com uma interface interativa e visualmente atraente, este projeto é ideal para fãs de Pokémon que desejam explorar o universo dos monstrinhos de bolso.',
+        tech: ['HTML5','CSS3','JavaScript'],
+        image: './Img/pokemon.jpg',
+        type: 'github',
+        link: 'https://github.com/erickotico/EmpireofRebithandRuins',
+        videoId: 'dQw4w9WgXcQ'
     }
 ];
 
