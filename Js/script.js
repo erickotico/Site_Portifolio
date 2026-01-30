@@ -17,7 +17,7 @@ const projects = [
         image: './Img/LogoTriviaGame.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/trivia-game',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     },
     {
         title: 'Jogo da cobrinha{Alfa}',
@@ -26,7 +26,7 @@ const projects = [
         image: './Img/LogoSnakeClassicGame.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/jogo-da-cobrinha',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     },
     {
         title: 'Lendas da resistencia {Alfa}',
@@ -35,7 +35,7 @@ const projects = [
         image: './Img/ThumbLendasdaResistencia.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/lendas-da-resistencia',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     },
     {
         title: 'Swat Combat {Descontinuado}',
@@ -44,7 +44,7 @@ const projects = [
         image: './Img/GameSwatCombat.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     },
     {
         title: 'SideScroller {Descontinuado}',
@@ -53,7 +53,7 @@ const projects = [
         image: './Img/GameSideScroller.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     }, 
     {
         title: 'Zero Hero {Descontinuado}',
@@ -62,7 +62,7 @@ const projects = [
         image: './Img/LogoZeroHourM.jpeg',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     },
     {
         title: 'Empire Of Rebirth and Ruins Game',
@@ -71,7 +71,7 @@ const projects = [
         image: './Img/LogoRPG.jpg',
         type: 'game',
         link: '#',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     },
     {
         title: 'Empire Of Rebirth and Ruins',
@@ -80,7 +80,7 @@ const projects = [
         image: './Img/LogoRPG.jpg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     }, 
     {
         title: 'Calculadora Simples',
@@ -89,7 +89,7 @@ const projects = [
         image: './Img/Calculadora.png',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     }, 
     {
         title: 'Barbearia Online',
@@ -98,7 +98,7 @@ const projects = [
         image: './Img/BarberImg.jpeg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     }, 
     {
         title: 'Pokedex',
@@ -107,7 +107,7 @@ const projects = [
         image: './Img/pokemon.jpg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     }, 
     {
         title: 'Site de Filmes e Séries',
@@ -116,7 +116,7 @@ const projects = [
         image: './Img/MoviesImg.jpeg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     }
 ];
 
