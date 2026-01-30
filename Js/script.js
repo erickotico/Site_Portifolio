@@ -65,7 +65,7 @@ const projects = [
         videoUrl: 'https://www.youtube.com/embed/YikmHAOjZh0UH7Is'
     },
     {
-        title: 'Empire Of Rebirth and Ruins Game',
+        title: 'Empire Of Rebirth and Ruins (Game)',
         description: 'Este projeto esta em desenvolvimento chamado "Empire of Rebirth and Ruins". Um jogo JRPG de aventura e ação onde você enfrenta inimigos e explora um mundo cheio de mistérios. (Em Desenvolvimento)',
         tech: ['Unreal Engine 5.6', 'Blueprint', "C++"],
         image: './Img/LogoRPG.jpg',
