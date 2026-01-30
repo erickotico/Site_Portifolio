@@ -15,7 +15,7 @@ const projects = [
         description: 'Jogo de perguntas e respostas com variedade de temas',
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoTriviaGame.png',
-        type: 'Game',
+        type: 'game',
         link: 'https://erickotico-dev.itch.io/trivia-game',
         videoId: 'dQw4w9WgXcQ'
     },
@@ -24,7 +24,7 @@ const projects = [
         description: 'Jogo da cobrinha classico',
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoSnakeClassicGame.png',
-        type: 'Game',
+        type: 'game',
         link: 'https://erickotico-dev.itch.io/jogo-da-cobrinha',
         videoId: 'dQw4w9WgXcQ'
     },
@@ -33,7 +33,7 @@ const projects = [
         description: 'Um Jogo Jrpg de aventura e ação onde você enfrenta inimigos e explora um mundo cheio de mistérios',
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/ThumbLendasdaResistencia.png',
-        type: 'Game',
+        type: 'game',
         link: 'https://erickotico-dev.itch.io/lendas-da-resistencia',
         videoId: 'dQw4w9WgXcQ'
     },
@@ -42,7 +42,7 @@ const projects = [
         description: 'Um Shooter Game em terceira pessoa, onde seu objetivo é matar os inimigos que aparecerá',
         tech: ['Unreal Engine 4.26', 'Blueprint'],
         image: './Img/GameSwatCombat.png',
-        type: 'Game',
+        type: 'game',
         link: 'https://erickotico-dev.itch.io/',
         videoId: 'dQw4w9WgXcQ'
     },
@@ -51,7 +51,7 @@ const projects = [
         description: 'Jogo de deslocamento lateral onde o terá desafios onde terrá que passar',
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/GameSideScroller.png',
-        type: 'Game',
+        type: 'game',
         link: 'https://erickotico-dev.itch.io/',
         videoId: 'dQw4w9WgXcQ'
     }, 
@@ -60,7 +60,7 @@ const projects = [
         description: 'Jogo FPS tatico em equipes onde o desafio é eliminar os inimigos no determinado limite de tempo ',
         tech: ['Unreal Engine 5.2', 'Blueprint'],
         image: './Img/LogoZeroHourM.jpeg',
-        type: 'Game',
+        type: 'game',
         link: 'https://erickotico-dev.itch.io/',
         videoId: 'dQw4w9WgXcQ'
     }, 
@@ -96,6 +96,15 @@ const projects = [
         description: 'Este projeto é uma Pokédex digital desenvolvida usando HTML, CSS e JavaScript. A Pokédex permite aos usuários pesquisar e visualizar informações detalhadas sobre diferentes espécies de Pokémon, incluindo seus tipos, habilidades e estatísticas. Com uma interface interativa e visualmente atraente, este projeto é ideal para fãs de Pokémon que desejam explorar o universo dos monstrinhos de bolso.',
         tech: ['HTML5','CSS3','JavaScript'],
         image: './Img/pokemon.jpg',
+        type: 'github',
+        link: 'https://github.com/erickotico/EmpireofRebithandRuins',
+        videoId: 'dQw4w9WgXcQ'
+    }, 
+    {
+        title: 'Site de Filmes e Séries',
+        description: 'Este projeto é um site de filmes e séries desenvolvido com HTML, CSS e JavaScript. O site oferece uma plataforma onde os usuários podem explorar uma vasta coleção de filmes e séries, ler sinopses. Com um design moderno e fácil de navegar, o site visa proporcionar uma experiência envolvente para os amantes do cinema e da televisão.',
+        tech: ['HTML5','CSS3','JavaScript'],
+        image: './Img/MoviesImg.jpeg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
         videoId: 'dQw4w9WgXcQ'
@@ -237,9 +246,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Mensagem de ajuda no console
-    console.log('%c🎨 PORTFÓLIO CARREGADO COM SUCESSO!', 'color: #4CAF50; font-size: 16px; font-weight: bold');
-    console.log('%cDica: Para adicionar projetos, edite Js/script.js', 'color: #2196F3; font-size: 12px');
-    console.log('%cGuia completo: Veja GUIA_ADICIONAR_PROJETOS.md', 'color: #FF9800; font-size: 12px');
-    console.log('%c📱 Abra o Console (F12) para ver erros de imagem', 'color: #9C27B0; font-size: 12px');
+    // Inicializar com a aba "Todos" como padrão
+    filterProjects('all');
+    updateTabButtons('all');
+    
+
 });
