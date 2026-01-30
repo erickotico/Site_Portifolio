@@ -17,7 +17,7 @@ const projects = [
         image: './Img/LogoTriviaGame.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/trivia-game',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     },
     {
         title: 'Jogo da cobrinha{Alfa}',
@@ -26,7 +26,7 @@ const projects = [
         image: './Img/LogoSnakeClassicGame.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/jogo-da-cobrinha',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     },
     {
         title: 'Lendas da resistencia {Alfa}',
@@ -35,7 +35,7 @@ const projects = [
         image: './Img/ThumbLendasdaResistencia.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/lendas-da-resistencia',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     },
     {
         title: 'Swat Combat {Descontinuado}',
@@ -44,7 +44,7 @@ const projects = [
         image: './Img/GameSwatCombat.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     },
     {
         title: 'SideScroller {Descontinuado}',
@@ -53,7 +53,7 @@ const projects = [
         image: './Img/GameSideScroller.png',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     }, 
     {
         title: 'Zero Hero {Descontinuado}',
@@ -62,8 +62,17 @@ const projects = [
         image: './Img/LogoZeroHourM.jpeg',
         type: 'game',
         link: 'https://erickotico-dev.itch.io/',
-        videoId: 'dQw4w9WgXcQ'
-    }, 
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    },
+    {
+        title: 'Empire Of Rebirth and Ruins Game',
+        description: 'Este projeto esta em desenvolvimento chamado "Empire of Rebirth and Ruins". Um jogo JRPG de aventura e ação onde você enfrenta inimigos e explora um mundo cheio de mistérios. (Em Desenvolvimento)',
+        tech: ['Unreal Engine 5.6', 'Blueprint', "C++"],
+        image: './Img/LogoRPG.jpg',
+        type: 'game',
+        link: '#',
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    },
     {
         title: 'Empire Of Rebirth and Ruins',
         description: 'Este é um site para um jogo em desenvolvimento chamado "Empire Of Rebirth and Ruins". O site apresenta informações sobre o jogo, incluindo sua história, personagens, mecânicas de jogo e atualizações de desenvolvimento. Desenvolvido com tecnologias web modernas para proporcionar uma experiência informativa e envolvente aos visitantes interessados no jogo.',
@@ -71,7 +80,7 @@ const projects = [
         image: './Img/LogoRPG.jpg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     }, 
     {
         title: 'Calculadora Simples',
@@ -80,7 +89,7 @@ const projects = [
         image: './Img/Calculadora.png',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     }, 
     {
         title: 'Barbearia Online',
@@ -89,7 +98,7 @@ const projects = [
         image: './Img/BarberImg.jpeg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     }, 
     {
         title: 'Pokedex',
@@ -98,7 +107,7 @@ const projects = [
         image: './Img/pokemon.jpg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     }, 
     {
         title: 'Site de Filmes e Séries',
@@ -107,7 +116,7 @@ const projects = [
         image: './Img/MoviesImg.jpeg',
         type: 'github',
         link: 'https://github.com/erickotico/EmpireofRebithandRuins',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     }
 ];
 
